@@ -1,0 +1,259 @@
+/* Reset de estilos */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos do menu de navegação */
+.nav {
+    /*background-color: #333;    */
+    background: linear-gradient(to right, #5B5555, #5B5555); 
+    color: white;
+    padding: 10px 0;
+    text-align: right; /* Alinha o menu à direita */    
+    width: 100%; /* Ocupa 100% da largura */
+    position: fixed; /* Fixa o menu no topo */
+    top: 0; /* Alinha no topo */
+    left: 0;
+
+    display: flex;
+    justify-content:right; /* Alinha os itens do menu */
+    align-items: center;  
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav ul {
+    list-style-type: none;
+    
+    position: relative; /* Adiciona posição relativa para os itens do menu */
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    padding-right: 40px; /* Adicione um espaçamento à direita */
+}
+
+.nav ul li {
+    display: inline-block;
+    position: relative; /* Adiciona posição relativa para os itens do menu */
+    margin-left: 20px; /* Adiciona espaçamento entre os itens */
+    margin-right: 35px; /* Adiciona espaçamento entre os itens */
+    text-align: left; /* Alinha o texto à esquerda */
+    width: 120px; /* Defina a largura desejada */
+}
+
+.nav ul li:first-child {
+    margin-left: 0; /* Remove o espaçamento do primeiro item */
+    margin-right: 20px; /* Adiciona espaçamento à direita */
+}
+
+
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav_logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav_itens li {
+    margin: 0 10px;
+}
+
+.nav_itens a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .nav_itens {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .nav_itens.active {
+        display: flex;
+    }
+
+    .nav_itens li {
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .nav_itens a {
+        font-size: 18px;
+    }
+
+    .nav_toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+
+
+
+/* Estilos do rodapé */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    /*background-color: #333; */
+    
+    background: linear-gradient(to left,#5B5555, #5B5555);
+    color: white;
+    width: 100%;
+    position: fixed; /* Fixa o rodapé no fundo */
+    bottom: 0; /* Alinha no fundo */
+    left: 0;
+}
+
+
+.nav ul li a:hover {
+    color: #ff9900; /* Cor de destaque ao passar o mouse */
+}
+
+.nav ul li:hover a {
+    color: #ff9900; /* Cor de destaque ao passar o mouse */
+}
+
+/* Estilização das opções do menu */
+.options {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.options li {
+    margin-bottom: 10px;
+}
+
+.options li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.options li a:hover {
+    color: #ff9900; /* Cor de destaque ao passar o mouse */
+}
+
+
+/* Estilização das opções do dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 100%; /* Coloca o dropdown abaixo do item do menu */
+    left: 0;
+}
+
+.nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+/* Estilização do submenu */
+
+
+/* Estilização do submenu */
+.submenu {
+    position: relative;
+    display: inline-block;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 100%; /* Coloca o submenu abaixo do item do menu */
+    left: 0;
+}
+
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+.submenu-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+    padding-left: 30px; /* Adicione um espaçamento à esquerda para recuar as opções */
+}
+
+.submenu-content a:hover {
+    background-color: #444;
+}
+
+.consulta-submenu:hover .submenu-content,
+.exclusao-submenu:hover .submenu-content {
+    display: block;
+}
+
+.submenu-content.show {
+    display: block;
+}
+/* Mostra o submenu apenas quando o elemento de submenu estiver ativo */
+.submenu.active .submenu-content {
+    display: block;
+}
+
+

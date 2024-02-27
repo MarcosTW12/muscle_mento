@@ -1,0 +1,75 @@
+/* Estilizando a aba "Sobre" */
+#sobre-tab {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+  }
+  
+  /* Estilo de hover (quando o mouse passa sobre a aba) */
+  #sobre-tab:hover {
+    background-color: #217dbb;
+  }
+  
+  /* Conteúdo da aba "Sobre" */
+  #sobre-content {
+    padding: 20px;
+    border: 1px solid #3498db;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+  }
+  
+  /* Estilizando o texto do conteúdo da aba "Sobre" */
+  #sobre-content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Estilizando títulos no conteúdo "Sobre" */
+  #sobre-content h2 {
+    font-size: 24px;
+    color: #3498db;
+  }
+  
+  /* Estilizando lista de pontos */
+  #sobre-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Estilizando links */
+  #sobre-content a {
+    color: #3498db;
+    text-decoration: underline;
+  }
+  
+  /* Estilizando tabela nutricional */
+  #sobre-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #sobre-content th, #sobre-content td {
+    border: 1px solid #3498db;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Estilos para os passos do tutorial */
+  #tutorial-steps {
+    margin-top: 20px;
+  }
+  
+  #tutorial-steps h3 {
+    font-size: 18px;
+    color: #3498db;
+  }
+  
+  #tutorial-steps ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+  }
+  
+  /* Adicione mais estilos e formatação conforme necessário */

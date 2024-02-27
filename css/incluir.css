@@ -1,0 +1,145 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para a seção de formulário */
+.form_section {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.form_section h2 {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #333;
+}
+
+.form_section input[type="text"],
+.form_section input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form_section input[type="hidden"] {
+    display: none;
+}
+
+.form_section .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.form_section .btn:hover {
+    background-color: #45a049;
+}
+
+.form_section .btn.sm {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.form_section .btn.danger {
+    background-color: #e74c3c;
+}
+
+.form_section .btn.danger:hover {
+    background-color: #c0392b;
+}
+
+.form_section .alert_message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.form_section .alert_message.success {
+    background-color: #0b7c3a;
+    color: #fff;
+}
+
+.form_section .alert_message.error {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Estilos para a barra de navegação */
+.nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav li {
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #4caf50;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.nav .dropdown a.dropbtn[href="sair.php"] {
+    background-color: #e74c3c;
+    border-radius: 4px;
+}

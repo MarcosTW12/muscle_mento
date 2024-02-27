@@ -1,0 +1,119 @@
+/* styles.css */
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Barra de navegação */
+.nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Seção do formulário */
+.form_section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form_section-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Mensagens de alerta */
+.alert_message {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.alert_message.success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.alert_message.error {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Formulário de input e botões */
+form {
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="hidden"],
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[readonly] {
+    background-color: #f2f2f2;
+    color: #777;
+}
+
+form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"] {
+    background-color: #168330;
+    color: #fff;
+    border: none;
+}
+
+form button[type="submit"]:hover {
+    background-color: #1e7e34;
+}
+
+form button[type="reset"] {
+    background-color: #db0319dc;
+    color: #fff;
+    border: none;
+}
+
+form button[type="reset"]:hover {
+    background-color: #530810;
+}
+
+/* Botões de ação no final */
+.btn1_centro {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn1 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn1.danger {
+    background-color: #dc3545;
+}
+
+.btn1:hover {
+    background-color: #0056b3;
+}

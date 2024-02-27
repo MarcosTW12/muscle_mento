@@ -1,0 +1,120 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos da seção de formulário */
+.form_section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Adicione esta linha para centralizar o conteúdo */
+}
+
+.form_section h2 {
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+/* Estilos do campo de entrada */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="hidden"] {
+    display: none;
+}
+
+/* Estilos do botão de envio e cancelamento */
+#submit, #Cancelar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px; /* Adicione esta linha para reduzir a margem entre os botões */
+}
+
+#Cancelar {
+    background-color: #ff0000;
+}
+
+/* Estilos da seção de dashboard */
+.dashboard {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Adicione esta linha para centralizar o conteúdo */
+}
+
+.dashboard h2 {
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+/* Estilos da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead th {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+table tbody td {
+    border:  #ccc;
+    padding: 10px;
+}
+
+/* Estilos dos botões na tabela */
+.btn, .btn1 {
+    background-color: #2a3f85;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.btn:hover, .btn1:hover {
+    background-color: #3167a5;
+}
+
+.btn.danger {
+    background-color: #770606;
+}
+
+/* Estilos do rodapé */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

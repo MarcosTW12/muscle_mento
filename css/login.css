@@ -1,0 +1,120 @@
+/* Reset de estilos para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para a caixa de login */
+.box {
+    background-color: #fff;
+    border: 1px solid #110808;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.box legend {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputBox .input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #0e0c0c;
+    border-radius: 5px;
+}
+
+.inputBox .input:focus {
+    border-color: #0078d4;
+}
+
+.inputBox .LabelInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.inputBox .input:focus + .LabelInput,
+.inputBox .input:valid + .LabelInput {
+    top: -20px;
+    font-size: 12px;
+    color: #043e6b;
+}
+
+.submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #005c9d;
+}
+
+a.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #539bce;
+    color: #030101;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a.btn:hover {
+    background-color: #005c9d;
+}
+
+/* Estilos para links não visitados */
+a {
+    color: #0078d4;
+}
+
+/* Estilos para links visitados */
+a:visited {
+    color: hsl(0, 17%, 95%);
+}
+
+
+/* Estilos para links quando estão sendo passados com o mouse */
+a:hover {
+    color: #005c9d;
+}
+
+/* Estilos para links ativos */
+a:active {
+    color: #ffffff;
+}
